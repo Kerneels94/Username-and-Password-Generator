@@ -1,0 +1,119 @@
+:root {
+  /* Background colors */
+  --background-color-dark: #262626;
+  --background-color-light: #fff;
+  --background-color-orangered: #ff4500;
+  /* Text colors */
+  --text-color-dark: #262626;
+  --text-color-light: #fff;
+  --text-color-green: #90ee90;
+  /* Shadow */
+  /* Padding */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+  opacity: 1;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: lightgreen;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+  margin: 0.5em 0;
+}
+
+p {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+/* Utility Classes */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+header > h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.username {
+  max-width: 50%;
+}
+
+.username > h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.password {
+  max-width: 50%;
+}
+
+.password > h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.username-btn {
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--text-color-green);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.password-btn {
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--text-color-green);
+  padding: 1rem;
+  cursor: pointer;
+}

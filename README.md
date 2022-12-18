@@ -6,3 +6,5 @@ and the new password will be appended to the end of the first password
 
 ##Password generator
 This generator will do the same as the above generator
+
+Notes: The password value upon generation produced a undefined value => extra special charactors were added to prevent this

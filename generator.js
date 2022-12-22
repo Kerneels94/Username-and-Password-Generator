@@ -5,14 +5,12 @@ Username code
 
 create array with the alphabet and numbers from 1 to 9
 create eventListener for the generate username button
-create function to generate a random name max length 20
+create function to generate a random name
 update the value of the span with the generated value
 */
 
 const usernameButton = document.querySelector('[data-key="username"]');
 const userNameValue = document.querySelector('[data-key="username__value"]');
-// Set max user name length
-const MAX_USERNAME_LENGTH = 10;
 const userName = [
   "a",
   "b",
@@ -61,12 +59,9 @@ const generateUserName = () => {
 
 usernameButton.addEventListener("click", () => {
   // loop through userName array
-  for (let i = 24; i < userName.length; i++) {
-    // Check if the max username length has been reached
-    if (MAX_USERNAME_LENGTH) {
-      // update the username textContent and call the generateUsername function on the array
-      userNameValue.textContent += userName[generateUserName()] + "\n";
-    }
+  for (let i = 0; i < userName.length; i++) {
+    // update the username textContent and call the generateUsername function on the array
+    userNameValue.textContent += userName[generateUserName()] + "\n";
   }
 });
 
@@ -74,14 +69,13 @@ usernameButton.addEventListener("click", () => {
 Password code
 
 create array with the alphabet and numbers from 1 to 9
-create eventListener for the generate username button
-create function to generate a random name max length 20
+create eventListener for the generate password button
+create function to generate a random name password
 update the value of the span with the generated value
 */
 
 const passwordButton = document.querySelector('[data-key="password"]');
 const passwordValue = document.querySelector('[data-key="password__value"]');
-const MAX_PASSWORD_LENGTH = 10;
 const passWord = [
   "a",
   "b",
@@ -108,6 +102,10 @@ const passWord = [
   "x",
   "y",
   "z",
+  "@",
+  "#",
+  "$",
+  "/",
   1,
   2,
   3,
@@ -125,11 +123,8 @@ const generatePassword = () => {
 };
 
 passwordButton.addEventListener("click", () => {
-  for (let i = 24; i < passWord.length; i++) {
-    // Check if the max username length has been reached
-    if (MAX_PASSWORD_LENGTH) {
-      // update the username textContent and call the generateUsername function on the array
-      passwordValue.textContent += passWord[generateUserName()] + "\n";
-    }
+  for (let i = 0; i < passWord.length; i++) {
+    // update the username textContent and call the generateUsername function on the array
+    passwordValue.textContent += passWord[generateUserName()] + "\n";
   }
 });
